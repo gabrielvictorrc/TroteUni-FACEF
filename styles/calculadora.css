@@ -1,0 +1,41 @@
+body#calculadora .sidebar li#ca{
+    background-color: blue;
+    margin-right: -10px;
+    border-radius: 0px 10px 10px 0px;
+}
+body#calculadora .sidebar li a#cal{
+    color: #fff;
+}
+body#calculadora .sidebar a#cal img{
+    filter: invert(100%);
+}
+
+.content form{
+    display: block;
+    margin-top: 30px;
+}
+
+.content form #peso, .content form #altura{
+    margin-bottom: 10px;
+}
+
+.content form input{
+    border: none;
+    border-radius: 30px;
+    padding: 8px 28px;
+    font-size: 20px;
+}
+
+.content form button{
+    border: none;
+    background-color: blue;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 12px 23px;
+    border-radius: 30px;
+    font-size: 16px;
+}
+.content form button:hover{
+    border: none;
+    background-color: rgb(24, 24, 239);
+}

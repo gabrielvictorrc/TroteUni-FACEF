@@ -1,0 +1,167 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins';
+}
+body{
+    background-color: rgb(236, 235, 235);
+}
+
+::-webkit-scrollbar-track{
+    background-color: #181818;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #686868;
+    border-radius: 0rem;
+}
+::selection{
+    color: #fff;
+    background: #0000ff;
+}
+
+
+
+
+
+.whatsapp{
+    display: block;
+    background-color: #0000ff;
+    width: 40px;
+    height: 40px;
+    padding: 14px;
+    border-radius: 20px;
+
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 10;
+}
+
+.sidebar{
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    height: 100vh;
+    min-width: 300px;
+    padding: 0px;
+}
+
+.sidebar li{
+    list-style-type: none;
+    margin-bottom: 12px;
+}
+.sidebar li:hover{
+    background-color: #efefef;
+}
+    
+.sidebar li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    display: block;
+    padding: 12px 40px;;
+}
+
+.sidebar li a img{
+    width: 20px;
+    margin-bottom: -1.5px;
+    margin-right: 10px;
+    display: inline;
+}
+
+.sidebar img{
+    display: flex;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.container{
+    margin-left: 300px;
+}
+
+header{
+    background-color: #080808;
+    color: #fff;
+    font-size: 30px;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header button{
+    border: 1px solid #fff;
+    background-color: #ffffff00;
+    color: #fff;
+    padding: 12px 40px;
+    border-radius: 40px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    transition: background .3s;
+    cursor: pointer;
+}
+header button:hover{
+    background-color: #0000ff;
+    border: 1px solid #0000ff;
+}
+
+header .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+}
+
+.content{
+    flex: 3;
+    min-height: 100vh;
+    padding: 30px 50px;
+    margin: auto;
+
+    /*max-width: 1100px;*/
+}
+
+.content .titulo{
+    background-color: #0000ff;
+    border-radius: 26px;
+    color: #fff;
+    padding: 20px 30px;
+
+    box-shadow: 0px 20px 20px #0000ff29;
+
+
+}
+
+.content .bloco{
+    background-color: #fff;
+    margin-top: 30px;
+    border-radius: 26px;
+    padding: 30px 50px;
+    font-size: 18px;
+
+}
+
+.content ol {
+    margin-left: 40px;
+}
+.content ol li{
+    margin-bottom: 20px;
+}
+
+nav .arrow{
+    background-color: #0000ff;  
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    margin-top: -60px;
+    cursor: pointer;
+
+    font-size: 22px;
+    border-radius: 10px 0px 0px 10px;
+    padding: 6px 14px;
+}

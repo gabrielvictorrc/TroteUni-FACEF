@@ -1,0 +1,11 @@
+body#home .sidebar li#ho{
+    background-color: blue;
+    margin-right: -10px;
+    border-radius: 0px 12px 12px 0px;
+}
+body#home .sidebar li a#hom{
+    color: #fff;
+}
+body#home .sidebar a#hom img{
+    filter: invert(100%);
+}

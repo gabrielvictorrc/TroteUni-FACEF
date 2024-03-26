@@ -1,0 +1,11 @@
+body#introducao .sidebar li#in{
+    background-color: blue;
+    margin-right: -10px;
+    border-radius: 0px 12px 12px 0px;
+}
+body#introducao .sidebar li a#int{
+    color: #fff;
+}
+body#introducao .sidebar a#int img{
+    filter: invert(100%);
+}
