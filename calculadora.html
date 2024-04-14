@@ -3,21 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trote Solidário | Calculadora</title>
+    <title>Trote Solidário | Uni-FACEF</title>
     <link rel="icon" type="image/x-icon" href="img/fav-icon.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/calculadora.css">
+    <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/style.css">
-
-    <script src="scripts/calculadora.js"></script>
 
 </head>
 
-<body id="calculadora">
+<body id="home">
 
     <a href="https://wa.me/5516999894642" target="_blank"><img class="whatsapp" src="img/whatsapp-icon.png" alt="Botão Whatsapp"></a>
 
@@ -32,9 +30,10 @@
             <li id="et1"><a href="1etapa.html" id="eta1"><img src="img/icone-5.svg" alt="">1a. Etapa</a></li>
             <li id="et2"><a href="2etapa.html" id="eta2"><img src="img/icone-6.svg" alt="">2a. Etapa</a></li>
             <li id="ca"><a href="calculadora.html" id="cal"><img src="img/icone-7.svg" alt="">Calculadora</a></li>
-            <li id="os"><a href="considera.html" id="obs"><img src="img/icone-8.svg" alt="">Observações</a></li>
+            <li id="os"><a href="observacoes.html" id="obs"><img src="img/icone-8.svg" alt="">Observações</a></li>
             <li id="so"><a href="sobre.html" id="sob"><img src="img/icone-9.svg" alt="">Sobre</a></li>
         </ul>
+
     </nav>
     <div class="container">
         <header>
@@ -44,28 +43,153 @@
 
         <div class="content">
             <div class="titulo">
-                <h1>Bem-vindo à Calculadora</h1>
-                <p>Calculadorado IMC - Índice de Massa Corpórea.</p>
+                <h1>Bem-vindo à Calculadora!</h1>
+                <p>Aqui você pode encontrar nossa sobre o regulamento do trote.</p>
             </div>
 
-            <form>
-                <div>
-                    <label id="peso">Peso</label>
-                    <input type="number" id="peso"/>
-                </div>
-                <div>
-                    <label for="altura">Altura</label>
-                    <input type="number" id="altura"/>
-                </div>
-                <div>
-                    <button type="button" onclick="imc()">
-                        Calcular IMC
-                    </button>
-                </div>
-            </form>
+            <div class="bloco">
+                <form action="">
+
+                    <div class="bloco1">
+                        <h2>Principais Informações</h2>
+    
+                    <div class="form-div">
+                        <label for="cor">Equipes:</label>
+                        <select name="" id="cor">
+                            <option value="Amarela">Amarela</option>
+                            <option value="Laranja">Laranja</option>
+                            <option value="Roxa">Roxa</option>
+                            <option value="Verde">Verde</option>
+                            <option value="Vermelho">Vermelho</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-div">
+                        <label for="cesta">Quantidade de cestas básicas entegues:</label>
+                        <input type="number" id="cesta">
+                    </div>
+    
+                    <div class="form-div">
+                        <label for="suplemento">Quantidade de suplementos entregues:</label>
+                        <input type="number" id="suplemento">
+                    </div>
+                
+                    <div class="form-div-list">
+                        <p>Itens avulsos</p>
+                        <label for="arroz5">Pacotes de arroz 5kg:</label>
+                        <input type="number" id="arroz5">
+                        <br>
+                        <label for="arroz1">Pacotes de arroz 1kg:</label>
+                        <input type="number" id="arroz1">
+                        <br>
+                        <label for="feijao2">Pacotes de Feijão 2kg:</label>
+                        <input type="number" id="feijao2">
+                        <br>
+                        <label for="feijao1">Pacotes de Feijão 1kg:</label>
+                        <input type="number" id="feijao1">
+                        <br>
+                        <label for="macarrao">Pacotes de macarrão 500g:</label>
+                        <input type="number" id="macrrao">
+                        <br>
+                        <label for="oleo">Garrafa de óleo 900ml</label>
+                        <input type="number" id="ole">
+                    </div>
+    
+                    <div class="ls">
+                        <p>Leite e Sangue</p>
+                        <div class="form-div">
+                            <label for="leite">Quantidade de litros de leite doados:</label>
+                            <input type="number" id="leite">
+                        </div>
+    
+                        <div class="form-div">
+                            <label for="sangue">Quantidade de pessoas que doaram sangue:</label>
+                            <input type="number" id="sangue">
+                        </div>
+                    </div>
+    
+                    <div class="bloco2">
+                        <h2>Apresentação musical</h2>
+                        <div class="form-div">
+                            <label for="criatividade">Pontos de criatividade:</label>
+                            <input type="number" id="criatividade">
+                            <br>
+                            <label for="performace">Pontos de performace:</label>
+                            <input type="number" id="performace">
+                            <br>
+                            <label for="contextualização">Pontos da contextualização:</label>
+                            <input type="number" id="contextualização"
+                            <br>>
+                            <label for="penalidade">A sua equipe sofreu penalidade?:</label>
+                            <select id="penalidade">
+                                <option value="0">Não</option>
+                                <option value="1">Sim</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="bloco3">
+                        <h2>Mascote</h2>
+                        <div class="form-div">
+                            <label for="originalidade">Pontos da originalidade: </label>
+                            <input type="number" id="originalidade">
+                            <label for="caracterizacao">Pontos da caracterizacao: </label>
+                            <input type="number" id="caracterizacao">
+                            <label for="atuacao">Pontos de Atuação: </label>
+                            <input type="number" id="atuacao">
+                        </div>
+    
+                    </div>
+    
+                    <div class="bloco4">
+                        <h2>Informações finais</h2>
+                        <div class="form-div">
+                            <label for="equipe">A sua equipe teve membros caracterizados?</label>
+                            <select id="equipe">
+                                <option value="0">Não</option>
+                                <option value="1">Sim</option>
+                            </select>
+                        </div>
+    
+                        <div class="form-div">
+                            <label for="social">A sua equipe participou da ação social?</label>
+                            <select id="social">
+                                <option value="0">Não</option>
+                                <option value="1">Sim</option>
+                            </select>
+                        </div>
+    
+    
+                    </div>
+    
+                    <div class="form-div">
+                        <label for="quiz"> Qual o total de acertos no quiz?</label>
+                        <select id="quiz">
+                            <option value="0">Nenhum</option>
+                            <option value="1">Um</option>
+                            <option value="2">Dois</option>
+                            <option value="3">Três</option>
+                            <option value="4">Quatro</option>
+                            <option value="5">Cinco</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-div">
+                        <label for="extra">Digite a pontuação extra</label>
+                        <input type="number"  id="extra">
+                    </div>
+                    </div>
+    
+    
+                    <div class="button">
+                        <button type="button" onclick="calculadora()">Calcular</button>
+                    </div>
+    
+                </form>
+            </div>
             
+
         </div>
     </div>
-
 </body>
 </html>

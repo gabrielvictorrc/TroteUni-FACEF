@@ -1,11 +1,11 @@
-body#objetivo .sidebar li#ob{
+body#etapaum .sidebar li#et1{
     background-color: blue;
     margin-right: -10px;
     border-radius: 0px 12px 12px 0px;
 }
-body#objetivo .sidebar li a#obj{
+body#etapaum .sidebar li a#eta1{
     color: #fff;
 }
-body#objetivo .sidebar a#obj img{
+body#etapaum .sidebar a#eta1 img{
     filter: invert(100%);
 }
