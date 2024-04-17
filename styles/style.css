@@ -3,6 +3,9 @@
     margin: 0px;
     font-family: 'Poppins';
 }
+p, td, li{
+    font-size: 17px;
+}
 body{
     background-color: rgb(236, 235, 235);
 }
@@ -86,7 +89,7 @@ header{
     background-color: #080808;
     color: #fff;
     font-size: 30px;
-    padding: 20px 30px;
+    padding: 18px 25px;
     display: flex;
     justify-content: space-between;
 }
@@ -144,12 +147,6 @@ header .logo{
 
 }
 
-.content ol {
-    margin-left: 40px;
-}
-.content ol li{
-    margin-bottom: 20px;
-}
 
 nav .arrow{
     background-color: #0000ff;  
@@ -164,4 +161,9 @@ nav .arrow{
     font-size: 22px;
     border-radius: 10px 0px 0px 10px;
     padding: 6px 14px;
+}
+
+.content form input, input{
+    background-color: #e0e0e0;
+    margin-bottom: 10px;
 }

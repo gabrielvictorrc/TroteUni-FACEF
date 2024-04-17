@@ -9,3 +9,61 @@ body#etapaum .sidebar li a#eta1{
 body#etapaum .sidebar a#eta1 img{
     filter: invert(100%);
 }
+
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+.cor{
+    color: #000;
+    font-weight: 500;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 18px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th {
+    background-color: blue;
+    color: white;
+}
+
+.list-formato {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-formato li {
+    padding: 5px 0;
+}
+
+th{
+    font-weight: 600;
+}
+
+.tabela{
+    background-color: #DBE5F1;
+    border: 1px solid #b1b1b160;
+    padding: 30px 50px;
+    margin-top: 30px;
+    margin-bottom: 16px;
+}
+
+.importante{
+    background-color: #f1eadb;
+    border: 1px solid #b1b1b160;
+    padding: 30px 50px;
+    margin-top: 30px;
+    margin-bottom: 16px;
+}

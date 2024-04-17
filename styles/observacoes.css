@@ -1,0 +1,11 @@
+body#observacoes .sidebar li#os{
+    background-color: blue;
+    margin-right: -10px;
+    border-radius: 0px 12px 12px 0px;
+}
+body#observacoes .sidebar li a#obs{
+    color: #fff;
+}
+body#observacoes .sidebar a#obs img{
+    filter: invert(100%);
+}

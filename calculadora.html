@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trote Solidário | Uni-FACEF</title>
+    <title>Trote Solidário | Calculadora</title>
     <link rel="icon" type="image/x-icon" href="img/fav-icon.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/index.css">
+    <script src="js/calculadora.js"></script>
+
+    <link rel="stylesheet" href="styles/calculadora.css">
     <link rel="stylesheet" href="styles/style.css">
 
 </head>
 
-<body id="home">
+<body id="calculadora">
 
     <a href="https://wa.me/5516999894642" target="_blank"><img class="whatsapp" src="img/whatsapp-icon.png" alt="Botão Whatsapp"></a>
 
@@ -31,7 +33,6 @@
             <li id="et2"><a href="2etapa.html" id="eta2"><img src="img/icone-6.svg" alt="">2a. Etapa</a></li>
             <li id="ca"><a href="calculadora.html" id="cal"><img src="img/icone-7.svg" alt="">Calculadora</a></li>
             <li id="os"><a href="observacoes.html" id="obs"><img src="img/icone-8.svg" alt="">Observações</a></li>
-            <li id="so"><a href="sobre.html" id="sob"><img src="img/icone-9.svg" alt="">Sobre</a></li>
         </ul>
 
     </nav>
@@ -44,152 +45,103 @@
         <div class="content">
             <div class="titulo">
                 <h1>Bem-vindo à Calculadora!</h1>
-                <p>Aqui você pode encontrar nossa sobre o regulamento do trote.</p>
+                <p>Aqui você pode encontrar nossa Calculadora do Trote.</p>
             </div>
 
             <div class="bloco">
-                <form action="">
-
-                    <div class="bloco1">
-                        <h2>Principais Informações</h2>
-    
-                    <div class="form-div">
-                        <label for="cor">Equipes:</label>
-                        <select name="" id="cor">
-                            <option value="Amarela">Amarela</option>
-                            <option value="Laranja">Laranja</option>
-                            <option value="Roxa">Roxa</option>
-                            <option value="Verde">Verde</option>
-                            <option value="Vermelho">Vermelho</option>
-                        </select>
-                    </div>
-    
-                    <div class="form-div">
-                        <label for="cesta">Quantidade de cestas básicas entegues:</label>
-                        <input type="number" id="cesta">
-                    </div>
-    
-                    <div class="form-div">
-                        <label for="suplemento">Quantidade de suplementos entregues:</label>
-                        <input type="number" id="suplemento">
-                    </div>
-                
-                    <div class="form-div-list">
-                        <p>Itens avulsos</p>
-                        <label for="arroz5">Pacotes de arroz 5kg:</label>
-                        <input type="number" id="arroz5">
-                        <br>
-                        <label for="arroz1">Pacotes de arroz 1kg:</label>
-                        <input type="number" id="arroz1">
-                        <br>
-                        <label for="feijao2">Pacotes de Feijão 2kg:</label>
-                        <input type="number" id="feijao2">
-                        <br>
-                        <label for="feijao1">Pacotes de Feijão 1kg:</label>
-                        <input type="number" id="feijao1">
-                        <br>
-                        <label for="macarrao">Pacotes de macarrão 500g:</label>
-                        <input type="number" id="macrrao">
-                        <br>
-                        <label for="oleo">Garrafa de óleo 900ml</label>
-                        <input type="number" id="ole">
-                    </div>
-    
-                    <div class="ls">
-                        <p>Leite e Sangue</p>
-                        <div class="form-div">
-                            <label for="leite">Quantidade de litros de leite doados:</label>
-                            <input type="number" id="leite">
-                        </div>
-    
-                        <div class="form-div">
-                            <label for="sangue">Quantidade de pessoas que doaram sangue:</label>
-                            <input type="number" id="sangue">
-                        </div>
-                    </div>
-    
-                    <div class="bloco2">
-                        <h2>Apresentação musical</h2>
-                        <div class="form-div">
-                            <label for="criatividade">Pontos de criatividade:</label>
-                            <input type="number" id="criatividade">
-                            <br>
-                            <label for="performace">Pontos de performace:</label>
-                            <input type="number" id="performace">
-                            <br>
-                            <label for="contextualização">Pontos da contextualização:</label>
-                            <input type="number" id="contextualização"
-                            <br>>
-                            <label for="penalidade">A sua equipe sofreu penalidade?:</label>
-                            <select id="penalidade">
-                                <option value="0">Não</option>
-                                <option value="1">Sim</option>
-                            </select>
-                        </div>
-                    </div>
-    
-                    <div class="bloco3">
-                        <h2>Mascote</h2>
-                        <div class="form-div">
-                            <label for="originalidade">Pontos da originalidade: </label>
-                            <input type="number" id="originalidade">
-                            <label for="caracterizacao">Pontos da caracterizacao: </label>
-                            <input type="number" id="caracterizacao">
-                            <label for="atuacao">Pontos de Atuação: </label>
-                            <input type="number" id="atuacao">
-                        </div>
-    
-                    </div>
-    
-                    <div class="bloco4">
-                        <h2>Informações finais</h2>
-                        <div class="form-div">
-                            <label for="equipe">A sua equipe teve membros caracterizados?</label>
-                            <select id="equipe">
-                                <option value="0">Não</option>
-                                <option value="1">Sim</option>
-                            </select>
-                        </div>
-    
-                        <div class="form-div">
-                            <label for="social">A sua equipe participou da ação social?</label>
-                            <select id="social">
-                                <option value="0">Não</option>
-                                <option value="1">Sim</option>
-                            </select>
-                        </div>
-    
-    
-                    </div>
-    
-                    <div class="form-div">
-                        <label for="quiz"> Qual o total de acertos no quiz?</label>
-                        <select id="quiz">
-                            <option value="0">Nenhum</option>
-                            <option value="1">Um</option>
-                            <option value="2">Dois</option>
-                            <option value="3">Três</option>
-                            <option value="4">Quatro</option>
-                            <option value="5">Cinco</option>
-                        </select>
-                    </div>
-    
-                    <div class="form-div">
-                        <label for="extra">Digite a pontuação extra</label>
-                        <input type="number"  id="extra">
-                    </div>
-                    </div>
-    
-    
-                    <div class="button">
-                        <button type="button" onclick="calculadora()">Calcular</button>
-                    </div>
-    
-                </form>
-            </div>
+                <div class="div-main">
+                    <h2 style="text-align: center">
+                      Calculadora Trote Solidário Uni-FACEF
+                    </h2>
+                    <br>
+                    <div class="div-main-calc">
+                        <form action="">
+                            <label for="leite">Litros de Leite</label>
+                            <input type="number" id="leite" />
+                            <label for="sangue">Quantidade de Doações</label>
+                            <input type="number" id="sangue" />
+                            <label for="acao">Ação Social</label>
+                            <input type="number" id="acao" max="1000"/>
+                            <label for="mascote">Apresentação Mascote</label>
+                            <input type="number" id="mascote" max="500"/>
+                            <label for="quiz">Quiz</label>
+                            <input type="number" id="quiz" max="1000"/>
+                            <label for="extra">Pontuação Extra</label>
+                            <input type="number" id="extra" max="1000"/>
+                            <label for="kit">Kit</label>
+                            <input type="number" id="kit" />
+                        </form>
             
+                        <div id="div-input">
+                            <label for="kit2">Kit Alimentação</label>
+                            <input type="number" name="" id="kit2" /> 
+                            <label for="lata">Lata de Suplemento</label>
+                            <input type="number" name="" id="lata" /> 
+                            <label for="arroz5">Arroz 5Kg</label>
+                            <input type="number" name="" id="arroz5" />
+                            <label for="arroz1">Arroz 1</label>
+                            <input type="number" name="" id="arroz1" />
+                            <label for="feijao2">Feijão 2Kg</label>
+                            <input type="number" name="" id="feijao2" />
+                            <label for="feijao1">Feijão 1Kg</label>
+                            <input type="number" name="" id="feijao1" />
+                            <label for="macarrao">Macarrão 500g</label>
+                            <input type="number" name="" id="macarrao" />
+                            <label for="oleo">Óleo 900g</label>
+                            <input type="number" name="" id="oleo" />
+                        </div>
+            
+                        <div class="final">
+                            <div class="btn-page">
+                                <button class="botao" id="btn-calc1" onclick="calcAm()">Calcular Equipe Amarela</button>
+                                <button class="botao" id="btn-calc2" onclick="calcLr()">Calcular Equipe Laranja</button>
+                                <button class="botao" button id="btn-calc3" onclick="calcRx()">Calcular Equipe <br>Roxa</button>
+                                <button class="botao" id="btn-calc4" onclick="calcVd()">Calcular Equipe Verde</button>
+                                <button class="botao" id="btn-calc5" onclick="calcVm()">Calcular Equipe Vermelha</button>
+                            </div>
+        
+                           <div class="resultado">
+                                <div class="result-equipe" style="background-color: #feff99; box-shadow: 0px 10px 10px #ffe7999a;">
+                                <p id="resp-am"></p>
+                                </div>
+                                <div class="result-equipe" style="background-color: #ffc864; box-shadow: 0px 10px 10px #ffc8649a;">
+                                <p id="resp-lr"></p>
+                                </div>
+                                <div class="result-equipe" style="background-color: #d3a3ff; box-shadow: 0px 10px 10px #d3a3ff9a;">
+                                <p id="resp-rx"></p>
+                                </div>
+                                <div class="result-equipe" style="background-color: #c0ffc0; box-shadow: 0px 10px 10px #c0ffc09a;">
+                                <p id="resp-vd"></p>
+                                </div>
+                                <div class="result-equipe" style="background-color: #ffadad; box-shadow: 0px 10px 10px #ffadad9a;">
+                                <p id="resp-vm"></p>
+                                </div>
+                           </div>
+                        </div>
 
+                    </div>
+            
+            
+                    <div id="control-inp">
+                        <label for="adc"><b>Possui itens Adcionais?</b></label>
+                        <br>
+                        <input type="radio" name="adc" id="sim" onclick="sim()" />
+                        <label for="sim">Sim</label>
+                        <br>
+                        <input type="radio" name="adc" id="nao" onclick="nao()" />
+                        <label for="nao">Não</label>
+                    </div>
+              
+
+                    
+                </div>  
+            </div>
+                
+            
+            
         </div>
     </div>
+
+    <script src="js/"></script>
 </body>
 </html>

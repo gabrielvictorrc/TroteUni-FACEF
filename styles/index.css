@@ -9,3 +9,204 @@ body#home .sidebar li a#hom{
 body#home .sidebar a#hom img{
     filter: invert(100%);
 }
+
+
+
+
+/* Estilizando a seção */
+section {
+    position: relative;
+    height: auto;
+    max-width: 1075px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+  
+  /* Estilizando o contêiner do swiper */
+.swiper {
+    width: 100%;
+    max-width: 950px;
+}
+  
+  /* Estilizando os cards */
+.card {
+    position: relative;
+    background: #fff;
+    border-radius: 20px;
+    height: auto;
+    width: 250px; /* Ajuste a largura conforme necessário */
+    margin: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Impedir que os cantos arredondados sejam cortados */
+}
+  
+.card::before {
+    content: "";
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    background: white;
+    border-radius: 20px 20px 0 0;
+}
+  
+.card .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    z-index: 100;
+}
+  
+.card .image {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%; /* Alterado para círculo */
+    padding: 3px;
+    background: blue;
+    margin-top: 30px;
+}
+  
+.card .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%; /* Alterado para círculo */
+    border: 3px solid #fff;
+}
+  
+.card .media-icons {
+    position: absolute;
+    top: 12px;
+    right: 12px; /* Ajuste a posição conforme necessário */
+}
+  
+.card .media-icons i {
+    color: blue;
+    opacity: 0.6;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 10px;
+}
+  
+.card .media-icons i:hover {
+    opacity: 1;
+}
+  
+.card .name-profession {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    color: #333;
+}
+  
+.name-profession .name {
+    font-size: 20px;
+    font-weight: 600;
+}
+  
+.name-profession .profession {
+    font-size: 15px;
+    font-weight: 500;
+}
+  
+.card .rating {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+  
+.card .rating i {
+    font-size: 18px;
+    margin: 0 2px;
+    color: blue;
+}
+  
+.card .button {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+  
+.card .button button {
+    background: blue;
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+  
+.card .button button:hover {
+    background: blue;
+}
+  
+/* Paginação do swiper */
+.swiper-pagination {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; /* Garantir que a paginação esteja acima dos cards */
+}
+  
+.swiper-pagination-bullet {
+    height: 7px;
+    width: 26px;
+    border-radius: 25px;
+    background: white;
+}
+  
+ /* Botões de navegação do swiper */
+.swiper-button-next,
+.swiper-button-prev {
+    opacity: 0.7;
+    color: white;
+    transition: all 0.3s ease;
+    z-index: 10; /* Garantir que os botões estejam acima dos cards */
+}
+  
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    opacity: 1;
+    color: white;
+}
+  
+
+div.swiper.mySwiper.container{
+    margin-left: 0px!important;
+}
+
+div.swiper-wrapper.content{
+    padding: 0px;
+    display: ruby;
+}
+
+
+.card .button {
+    display: block;
+
+}
+.card .button button{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.card{
+    margin: 0px;
+    width: auto;
+}
+
+.card{
+    margin-bottom: 20px;
+}

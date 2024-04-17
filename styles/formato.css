@@ -34,3 +34,10 @@ tr:nth-child(even) {
 td h2{
     margin-bottom: 15px;
 }
+
+.content ol {
+    margin-left: 40px;
+}
+.content ol li{
+    margin-bottom: 20px;
+}

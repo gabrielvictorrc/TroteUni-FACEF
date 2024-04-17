@@ -19,7 +19,7 @@ body#calculadora .sidebar a#cal img{
     margin-bottom: 10px;
 }
 
-.content form input{
+.content form input, input{
     border: none;
     border-radius: 30px;
     padding: 8px 28px;
@@ -38,4 +38,95 @@ body#calculadora .sidebar a#cal img{
 .content form button:hover{
     border: none;
     background-color: rgb(24, 24, 239);
+}
+
+
+
+
+
+
+
+
+
+
+#div-input{
+    display: none;
+    margin:10px;
+}
+#control-inp{
+    display: flex;
+    gap: 5px;
+    margin:10px;
+    
+}
+form{
+    margin: 10px;
+}
+input{
+    display: flex;
+    flex-direction:row;
+    margin: 5px 0px;
+    padding: 5px;
+
+}
+.div-main-calc{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#control-inp > label{
+    padding: 2px;
+}
+
+.resultado{
+    display: block;
+    align-items: center;
+}
+
+
+
+.result-equipe{
+    width: 75px;
+    display: flex;
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+    min-height: 80px;
+    margin-bottom: 15px;
+}
+.result-equipe p {
+    margin: auto;
+    font-weight: 700;
+}
+
+.botao{
+    min-height: 80px;
+    border: 0px solid;
+    background-color: #1b1b1b;
+    color: #fff;
+    border-radius: 20px;
+    padding: 12px;
+    margin-bottom: 15px;
+}
+.botao:hover{
+    background-color: blue;
+}
+
+#control-inp {
+    display: flex;
+    gap: 5px;
+    margin: 10px;
+    background-color: #e0e0e0;
+    padding: 12px 30px;
+    border-radius: 30px;
+}
+
+.btn-page{
+    display: inline-grid;
+    margin-right: 15px;
+}
+
+.final{
+    display: flex;
 }
